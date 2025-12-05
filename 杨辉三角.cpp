@@ -4,7 +4,7 @@ int main() {
 	int n;
 	scanf_s("%d", &n);
 	int arr[20][20];
-	memset(arr, 0, sizeof(arr));
+	memset(arr, 0, sizeof(arr)); //memset只能初始化数组为零
     for (int i = 0; i <= n - 1; i++) {
         arr[i][0] = 1;
         arr[i][i] = 1;
@@ -26,9 +26,7 @@ for (int i = 0; i <= n - 1; i++) {
             break;
         }
     }
-
 }
-
 
 return 0;
 }
